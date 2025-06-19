@@ -1,0 +1,22 @@
+//dept repay
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int p,r,n,i,tot;
+    float s,total;
+    scanf("%d\n%d\n%d",&p,&r,&n);
+    i=((p*n*r)/100);
+    tot=p+i;
+    s=(0.02*i);
+    total=tot-s;
+    printf("%.2f\n%.2f\n",(float)i,(float)tot);
+    printf("%.2f\n%.2f",s,total);
+    return 0;
+}
