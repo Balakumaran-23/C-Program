@@ -1,0 +1,40 @@
+Perfect Square
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    int a[n],x,cnt=0,b[n],k=0,j=0;
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("The Perfect Square Values are ");
+    for(int i=0;i<n;i++)
+    {
+        x=(int)sqrt(a[i]);
+        if((x*x)== a[i])
+        {   
+            while(x>0)
+            {
+                b[j]=a[i];
+                printf("%d ",b[j]);
+               k=k+b[j];
+                break;
+                
+            }
+            j=j+1;
+            
+            cnt++;
+        }
+    }
+    
+    printf("\nThe Number of Perfect Squares are %d\n",cnt);
+    printf("The Sum of Perfect Square is %d",k);
+    return 0;
+}
