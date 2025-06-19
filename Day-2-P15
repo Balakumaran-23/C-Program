@@ -1,0 +1,54 @@
+Converting Number to String
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+       int a;
+    scanf("%d",&a);
+   
+    if(a>=0 && a<=9){
+    switch(a){
+             
+        case 0:
+            printf("Integer is %d and String is Zero",a);
+            break;
+        case 1:
+            printf("Integer is %d and String is One",a);
+            break;
+        case 2:
+            printf("Integer is %d and String is Two",a);
+            break;
+        case 3:
+            printf("Integer is %d and String is Three",a);
+            break;
+        case 4:
+            printf("Integer is %d and String is Four",a);
+            break;
+        case 5:
+            printf("Integer is %d and String is Five",a);
+            break;
+        case 6:
+            printf("Integer is %d and String is Six",a);
+            break;
+        case 7:
+            printf("Integer is %d and String is Seven",a);
+            break;
+        case 8:
+            printf("Integer is %d and String is Eight",a);
+            break;
+        case 9:
+            printf("Integer is %d and String is Nine",a);
+            break;
+    }
+    }
+        else
+            printf("Invalid Input");
+       
+    
+    
+    return 0;
+}
