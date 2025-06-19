@@ -1,0 +1,28 @@
+Time
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int h,m,s,l,k;
+    scanf("%d\n%d\n%d",&h,&m,&s);
+    if(m>=0&&s>=0){
+        k=s/60;
+        m=m+k;
+        s=s%60;
+        l=m/60;
+        h=h+l;
+        m=m%60;
+        
+        
+        
+        
+        printf("Total Number of hours is %d\n",h);
+        printf("Total Number of minutes is %d\n",m);
+        printf("Total Number of seconds is %d",s);
+    }
+    return 0;
+}
