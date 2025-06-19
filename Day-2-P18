@@ -1,0 +1,40 @@
+Account Balance
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int am,a,w;
+    scanf("%d\n%d",&am,&a);
+    scanf("%d",&w);
+    switch(a){
+            
+     case 1:
+    {
+        am=am+w;
+        printf("%d",am);
+        break;
+    }
+        case 2:
+            {
+        
+        if(am<w)
+            printf("Insufficient Balance");
+        else{
+            am=am-w;
+            printf("%d",am);
+        }
+                break;
+        
+     }
+            default:
+            printf("Invalid Input");
+            break;
+    }
+    return 0;
+}
