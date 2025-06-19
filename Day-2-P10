@@ -1,0 +1,24 @@
+Automorphic number
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int n,m;
+    scanf("%d",&n);
+    if(n>0&&n<=9){
+        if((n*n)%10==n)
+            printf("Automorphic Number");
+        else
+            printf("Not Automorphic Number");
+        
+    }
+    else
+        printf("Invalid Input");
+    return 0;
+}
