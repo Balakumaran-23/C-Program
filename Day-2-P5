@@ -1,0 +1,22 @@
+Leap Year or Not
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int k;
+    scanf("%d",&k);
+
+    if((k%4==0 && k%100!=0)|| k%400==0) {
+        printf("The Given Year %d is a Leap Year.",k);
+    }
+    
+    else
+        printf("The Given Year %d is Not a Leap Year.",k);
+   
+    return 0;
+}
