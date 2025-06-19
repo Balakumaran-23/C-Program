@@ -1,0 +1,24 @@
+//Shape Calculation-Area
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+# define PI 3.14159265359
+
+int main() {
+
+    int s,l,br,r,b,h;
+    float cir;
+    
+    scanf("%d\n%d\n%d\n",&s,&l,&br);
+    scanf("%d\n%d\n%d\n",&r,&b,&h);
+    int rec=l*br;
+    cir=floor(PI*r*r*100)/100;
+    int tri=0.5*b*h;
+    printf("Area of Square=%d\n",s*s);
+    printf("Area of Rectangle=%d\n",rec);
+    printf("Area of Circle=%.2f\n",(float)cir);
+    printf("Area of Triangle=%d",tri);
+    return 0;
+}
