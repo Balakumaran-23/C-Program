@@ -1,0 +1,20 @@
+PROFIT CALCULATOR
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,c,s;
+    float t;
+    scanf("%d\n%d\n%d",&n,&c,&s);
+    t=(float)((n*c)-(n*s))-100;
+    printf("Number of copies sold:%d\n",n);
+    printf("Cost of each copy:%d\n",c);
+    printf("Cost spent by agency on each newspaper:%d\n",s);
+    printf("The profit obtained is Rs.%.2f",t);
+    
+    return 0;
+}
