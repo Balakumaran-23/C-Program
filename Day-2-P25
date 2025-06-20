@@ -1,0 +1,26 @@
+Perfect or Not
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,y=0;
+    scanf("%d",&n);
+    if(n>0){
+    for(int i=1;i<n;i++){
+        if(n%i==0){
+            y+=i;
+        }
+    }
+    if(y==n)
+        printf("The Number %.1f is a Perfect Number.",(float)n);
+       else
+        printf("The Number %.1f is a Not Perfect Number.",(float)n);
+    }
+    else
+        printf("Invalid Input");
+    return 0;
+}
