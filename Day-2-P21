@@ -1,0 +1,16 @@
+MULTIPLICATION TABLE
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+      int a,x;
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++){
+        x=a*i;
+        printf("%d * %d = %d\n",a,i,x);
+    }
+    return 0;
+}
