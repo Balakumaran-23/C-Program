@@ -1,0 +1,25 @@
+Sum of Digits
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int m=0,x=0,y,n;
+    scanf("%d",&n);
+    m=n;
+    if(n>9&&n<100){
+    while(m>0){
+       y= m%10;
+       x+=y;
+        m=m/10;
+        
+    }
+        printf("Sum of Digit %d is %03d",n,x);
+    }
+    else
+        printf("Invalid Input");
+    return 0;
+}
